@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex5</title>
+</head>
+
+<body>
+    <label>Number of Win:</label>
+    <input type="text" id="win"> <br><br>
+    <label>Number of Draw:</label>
+    <input type="text" id="draw"><br><br>
+    <label>Number of lose</label>
+    <input type="text" id="lose"> <br><br>
+    <button onclick="totalMark()">See Total Marks</button> <br><br>
+    <h3 id="result"></h3>
+    <script>
+    function totalMark() {
+        var win = parseInt(document.getElementById('win').value);
+        var draw = parseInt(document.getElementById('draw').value);
+        var lose = parseInt(document.getElementById('lose').value);
+        var totalmarks = ((win * 3) + (draw * 1) + (lose * 0));
+        alert(`Total Marks: ${totalmarks}`);
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex9</title>
+</head>
+<style type="text/css">
+#htmltxt,
+#csstxt {
+    display: none;
+}
+</style>
+
+<body>
+    <button id="html">HTML</button>
+    <button id="css">CSS</button>
+    <p id="htmltxt">This is HTLM
+        <p id="csstxt">This is CSS</p>
+        <script src="JQuery/jquery-3.5.1.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $("#html").click(function() {
+                $("#htmltxt").toggle();
+            });
+            $("#css").click(function() {
+                $("#csstxt").toggle();
+            });
+        });
+        </script>
+        <style>
+        </body></html>
